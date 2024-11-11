@@ -13,8 +13,9 @@ namespace CSharplight
             Random random = new Random();
             int number = random.Next(0, 100);
             Console.WriteLine($"Сгенерированное число: {number}");
-
             int sum = 0;
+            int three = 3;
+            int five = 5;
 
             for (int i = 0; i <= number; i++)
             {
