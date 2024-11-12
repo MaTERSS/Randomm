@@ -23,11 +23,12 @@ namespace CSharplight
 
             for (int i = 0; i <= number; i++)
             {
-                if (i % 3 == 0 || i % 5 == 0)
+                if (i % firstDivisor == 0 || i % secondDivisor == 0)
                 {
                     sum = i;
                 }
             }
+          
             Console.WriteLine($"Сумма всех положительных чисел, кратных 3 или 5, меньше {number}: {sum}");
         }
     }
