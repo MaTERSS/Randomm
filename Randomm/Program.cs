@@ -13,7 +13,7 @@ namespace CSharplight
             Random random = new Random();
             int maxNumber = 100;
             int number = random.Next(0, maxNumber);
-            Console.WriteLine("Сгенерированное число:" + number);
+            Console.WriteLine($"Сгенерированное число: {number}");
             int sum = 0;
             int firstDivisor = 3;
             int secondDivisor = 5;
