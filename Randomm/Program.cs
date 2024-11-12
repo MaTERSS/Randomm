@@ -11,17 +11,18 @@ namespace CSharplight
         static void Main(string[] args)
         {
             Random random = new Random();
-            int number = random.Next(0, 100);
-            Console.WriteLine($"Сгенерированное число: {number}");
+            int maxNumber = 100;
+            int number = random.Next(0, maxNumber);
+            Console.WriteLine("Сгенерированное число:" + number);
             int sum = 0;
-            int three = 3;
-            int five = 5;
+            int firstDivisor = 3;
+            int secondDivisor = 5;
 
             for (int i = 0; i <= number; i++)
             {
                 if (i % 3 == 0 || i % 5 == 0)
                 {
-                    sum = i++;
+                    sum = i;
                 }
             }
             Console.WriteLine($"Сумма всех положительных чисел, кратных 3 или 5, меньше {number}: {sum}");
