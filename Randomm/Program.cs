@@ -11,9 +11,12 @@ namespace CSharplight
         static void Main(string[] args)
         {
             Random random = new Random();
+            int minNumber = 0;
             int maxNumber = 100;
-            int number = random.Next(0, maxNumber);
+            int number = random.Next(minNumber, maxNumber);
+          
             Console.WriteLine($"Сгенерированное число: {number}");
+          
             int sum = 0;
             int firstDivisor = 3;
             int secondDivisor = 5;
